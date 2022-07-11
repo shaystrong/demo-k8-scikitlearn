@@ -82,7 +82,7 @@ spec:
   `kubectl get pods -A`
   
   
-#Kill clusters that are having problems
+## Kill clusters that are having problems
 
 For example,
 
@@ -97,6 +97,6 @@ Then edit the `train.yaml` file and see if there are errors. Replace the old fil
 
 `kubectl replace --force -f train.yaml`
 
-Delete pods:
+Delete pods (although they may respawn depending on conditions in the `train.yaml` file):
 
 `kubectl delete pods <pod_namespace>`
