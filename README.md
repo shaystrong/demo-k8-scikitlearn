@@ -81,4 +81,17 @@ spec:
   `kubectl get pods -A`
   
   
+#Kill clusters that are having problems
 
+For example,
+
+`kubectl get pods -A` reveals:
+
+```
+NAMESPACE              NAME                                         READY   STATUS              RESTARTS       AGE
+default                train-ml-k8s-1-n8js9                         0/1     ImagePullBackOff    0              16m
+```
+
+Then edit the `train.yaml` file and see if there are errors. Replace the old file with the new one:
+
+`kubectl replace --force -f train.yaml`
