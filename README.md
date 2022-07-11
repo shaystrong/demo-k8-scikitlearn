@@ -95,3 +95,7 @@ default                train-ml-k8s-1-n8js9                         0/1     Imag
 Then edit the `train.yaml` file and see if there are errors. Replace the old file with the new one:
 
 `kubectl replace --force -f train.yaml`
+
+Delete pods:
+
+`kubectl delete pods <pod_namespace>`
