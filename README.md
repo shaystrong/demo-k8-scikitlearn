@@ -78,6 +78,7 @@ spec:
   ```
   
   `kubectl apply -f train.yaml`
+  
   `kubectl get pods -A`
   
   
